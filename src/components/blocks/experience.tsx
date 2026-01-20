@@ -1,15 +1,14 @@
+import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
 import experience_freelance from '@/lib/pic/experience-freelance.png';
 import experience_iaf from '@/lib/pic/experience-iaf.png';
-import { cn } from '@/lib/utils';
 import { Waypoints } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
+import { useState } from 'react';
 import LetterGlitch from '../LetterGlitch';
 import { Card, CardContent, CardDescription } from '../ui/card';
 import { Item, ItemContent, ItemHeader } from '../ui/item';
-import { useState } from 'react';
-import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
 
 interface ExperienceCard {
   title: string;
@@ -39,7 +38,7 @@ function ExperienceCard({
     <Card
       tabIndex={1}
       style={{ borderStyle: 'outset' }}
-      className="cursor-target relative box-border flex h-75 w-78 cursor-pointer overflow-hidden border-4 border-blue-300 p-2 transition-all duration-500 ease-in-out **:p-0 hover:scale-105 sm:h-58 sm:w-125"
+      className="cursor-target relative box-border flex h-75 w-78 cursor-pointer overflow-hidden border-4 border-blue-300 p-2 transition-all duration-500 ease-in-out **:p-0 active:scale-105 sm:h-58 sm:w-125"
       onFocusCapture={() => setFocused(true)}
       onBlurCapture={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget)) setFocused(false);

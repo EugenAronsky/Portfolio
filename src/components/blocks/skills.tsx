@@ -26,7 +26,7 @@ function SkillCard({ title, description, src }: SkillCardProps) {
     <Card
       tabIndex={1}
       style={{ borderStyle: 'outset' }}
-      className="group cursor-target relative box-border flex h-43.25 w-80 cursor-pointer gap-2 overflow-hidden border-4 border-blue-300 p-2 transition-all duration-500 ease-in-out **:p-0 hover:scale-105"
+      className="group cursor-target relative box-border flex h-43.25 w-80 cursor-pointer gap-2 overflow-hidden border-4 border-blue-300 p-2 transition-all duration-500 ease-in-out **:p-0 active:scale-105"
       onFocusCapture={() => setFocused(true)}
       onBlurCapture={(e) => {
         if (!e.currentTarget.contains(e.relatedTarget)) setFocused(false);
