@@ -1,12 +1,12 @@
 'use client';
-import { Usb } from 'lucide-react';
-import { Button } from '../ui/button';
-import { Item, ItemHeader } from '../ui/item';
 import { useMediaQuery } from '@/lib/hooks/useMediaQuery';
 import hero from '@/lib/pic/hero.png';
 import { cn } from '@/lib/utils';
-import Link from 'next/link';
+import { Usb } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '../ui/button';
+import { Item, ItemHeader } from '../ui/item';
 
 function Hero() {
   const isXS = useMediaQuery('(min-width: 413px)');

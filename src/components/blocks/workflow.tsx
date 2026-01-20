@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils';
 import {
   BrainCog,
   Figma,
@@ -11,9 +12,7 @@ import {
 import { AnimatePresence, motion } from 'motion/react';
 import React, { ForwardRefExoticComponent, RefAttributes } from 'react';
 import { Item, ItemContent, ItemHeader } from '../ui/item';
-import { Separator } from '../ui/separator';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
-import { cn } from '@/lib/utils';
 
 interface WorkflowStepProps {
   index?: number;

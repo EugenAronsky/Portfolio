@@ -3,9 +3,8 @@ import skill_design from '@/lib/pic/skill-design.png';
 import skill_performance from '@/lib/pic/skill-performance.png';
 import skill_scalable from '@/lib/pic/skill-scalable.png';
 import skill_user from '@/lib/pic/skill-user.png';
-import { cn } from '@/lib/utils';
 import { BrainCircuit } from 'lucide-react';
-import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import { AnimatePresence, motion } from 'motion/react';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -24,7 +23,6 @@ function SkillCard({ title, description, src }: SkillCardProps) {
   const [focused, setFocused] = useState(false);
 
   return (
-    // <GlassSurface width={'auto'} height={'auto'} borderRadius={20} className="h-43.25 w-80">
     <Card
       tabIndex={1}
       style={{ borderStyle: 'outset' }}
