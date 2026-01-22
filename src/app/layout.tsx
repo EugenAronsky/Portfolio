@@ -14,8 +14,28 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'Eugen Aronskiy',
-  description: 'Created by owner',
+  description:
+    'Frontend developer crafting fast, scalable, and visually refined web experiences.',
+
+  keywords: [
+    'Eugen Aronskiy',
+    'Frontend Developer',
+    'Web Developer',
+    'React',
+    'Next.js',
+    'UI/UX',
+  ],
+
+  authors: [{ name: 'Eugen Aronskiy' }],
+
+  openGraph: {
+    title: 'Eugen Aronskiy',
+    description:
+      'Frontend developer crafting fast, scalable, and visually refined web experiences.',
+    type: 'website',
+  },
 };
+
 
 export default function RootLayout({
   children,
