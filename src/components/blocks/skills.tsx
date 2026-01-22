@@ -79,15 +79,12 @@ function SkillCard({ title, description, src }: SkillCardProps) {
         </CardDescription>
       </MotionCardContent>
     </Card>
-    // </GlassSurface>
   );
 }
 
 function Skills() {
   return (
     <section className="relative box-border flex w-full justify-center">
-      {/* <TargetCursor spinDuration={2} hideDefaultCursor={true} parallaxOn={true} /> */}
-      {/* <Image src={wallpaper} alt="" className="absolute size-full" /> */}
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, y: 16 }}

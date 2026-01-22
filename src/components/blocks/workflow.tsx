@@ -51,14 +51,14 @@ const steps: WorkflowStepProps[] = [
 
 function Workflow() {
   return (
-    <section className="relative box-border flex w-full justify-center">
+    <section className="relative box-border flex w-full justify-center bg-white">
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="w-full max-w-7xl"
+          className="w-full max-w-7xl bg-white"
         >
           <Item className="w-full overflow-hidden bg-white px-5 sm:px-16">
             <ItemHeader className="justify-start gap-5">
@@ -70,7 +70,7 @@ function Workflow() {
               </div>
             </ItemHeader>
 
-            <ItemContent className="relative flex min-w-0 flex-row justify-center">
+            <ItemContent className="relative flex min-w-0 flex-row justify-center bg-white">
               <div className="flex w-fit min-w-0 flex-row justify-center gap-3 bg-white">
                 {steps.map((props, index) => {
                   const isFirst = index === 0;
