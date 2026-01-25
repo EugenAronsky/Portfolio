@@ -76,7 +76,7 @@ function Contact() {
                   </Card>
                 </Link>
 
-                <Link href={'tel:+972 57-520-8295'}>
+                <Link href={'tel:+972 58-520-8295'}>
                   <Card className="rounded-sm bg-blue-100 shadow-[inset_0_0_0_0] shadow-black/15 transition-all active:scale-95 active:shadow-[inset_0_0_10px_0]">
                     <CardContent className="flex items-center justify-center">
                       <PhoneCall size={60} className="fill-blue-50 stroke-blue-500 stroke-[1.25]" />

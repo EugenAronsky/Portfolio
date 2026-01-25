@@ -70,8 +70,8 @@ function Workflow() {
               </div>
             </ItemHeader>
 
-            <ItemContent className="relative flex min-w-0 flex-row justify-center bg-white">
-              <div className="flex w-fit min-w-0 flex-row justify-center gap-3 bg-white">
+            <ItemContent className="relative isolate z-0 flex min-w-0 flex-row justify-center overflow-hidden bg-white">
+              <div className="flex w-fit min-w-0 flex-row justify-center gap-2 bg-white sm:gap-3">
                 {steps.map((props, index) => {
                   const isFirst = index === 0;
                   const isLast = index === steps.length - 1;
@@ -79,7 +79,7 @@ function Workflow() {
                   return (
                     <React.Fragment key={props.tooltip}>
                       {isFirst ? (
-                        <div className="relative flex h-13 w-10 min-w-0 items-center justify-center">
+                        <div className="relative hidden h-13 w-10 min-w-0 items-center justify-center sm:flex">
                           <div className="h-0.5 w-full bg-blue-100" />
                         </div>
                       ) : (
@@ -90,12 +90,12 @@ function Workflow() {
                           )}
                         >
                           <Play className="absolute size-4 fill-blue-100 stroke-blue-100 sm:size-5" />
-                          <div className="h-0.5 w-full bg-blue-100" />
+                          <div className="hidden h-0.5 w-full bg-blue-100 sm:block" />
                         </div>
                       )}
                       <WorkflowStep {...props} index={index} />
                       {isLast && (
-                        <div className="relative flex h-13 w-10 min-w-0 items-center justify-center">
+                        <div className="relative hidden h-13 w-10 min-w-0 items-center justify-center sm:flex">
                           <div className="h-0.5 w-full bg-blue-100" />
                         </div>
                       )}
@@ -116,7 +116,7 @@ function Workflow() {
                   x: ['-100%', '100%'],
                 }}
                 viewport={{ once: false }}
-                className="pointer-events-none absolute mt-px h-[98%] min-w-full bg-black mix-blend-hue"
+                className="pointer-events-none absolute inset-0 mt-px h-[98%] transform-gpu bg-black mix-blend-hue will-change-transform supports-[mix-blend-mode:hue]:mix-blend-hue"
               />
             </ItemContent>
           </Item>

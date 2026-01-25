@@ -9,7 +9,7 @@ function AboutMe() {
         viewBox="0 0 2160 585"
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid meet"
-        className="pointer-events-none absolute w-full -translate-y-[48%] transition-all duration-500"
+        className="pointer-events-none absolute w-full -translate-y-[50%] transition-all duration-500"
       >
         <path
           d="M960.878 260.518c93.975 15.277 188 30.276 521.372 67.17 1.082.06 2.164.122 3.279.185 30.077 1.675 60.104 2.336 90.221 2.315l2.575-.001c100.675-.04 200.474-9.832 544.093-94.601l8.623-2.67q3.087-.956 6.172-1.914a4712 4712 0 0 1 9.588-2.963l2.97-.926 2.742-.841 2.413-.746C2157 225 2157 225 2160 225v360H0V224c160.819-21.207 160.819-21.207 240.437-26.25l3.977-.252c23.015-1.443 46.033-2.511 69.086-3.06l2.64-.064c83.512-1.937 167.09 1.8 644.738 66.144"
@@ -47,8 +47,13 @@ function AboutMe() {
             >
               <div className="max-w-3xl">
                 <p>
-                  <b>Frontend Developer with 5 years of experience</b>, including{' '}
-                  <b>3 years in the Israel Defense</b> Forces and{' '}
+                  Hi, I'm{' '}
+                  <b>
+                    Eugen Aronskiy
+                    <br />
+                    Frontend Developer with 5 years of experience
+                  </b>
+                  , including <b>3 years in the Israel Defense</b> Forces and{' '}
                   <b>2 years as a freelance developer</b>, building scalable and complex,
                   high-responsibility frontend systems where{' '}
                   <b>performance, reliability, and usability</b> are critical.
